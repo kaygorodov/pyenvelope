@@ -10,3 +10,11 @@ Currently, it calculates a bounding rectangle with minimum area (I am going to a
 You can use `pip`:
 
     $ pip install pyenvelope
+    
+## Usage
+
+Use the `get_minimum_bounding_rectangle` function. It takes a set of points and returns coordinates of MBR vertices:
+
+    >>> from pyenvelope import get_minimum_bounding_rectangle
+    >>> get_minimum_bounding_rectangle([(1, 2), (2, 6), (3, 7), (2, 2)])
+    [(1.94, 1.76), (3.2, 6.94), (2.29, 7.17), (1.00, 2.00), (1.94, 1.76)]
